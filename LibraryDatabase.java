@@ -36,7 +36,7 @@ public class LibraryDatabase extends Book {
             if (name.equals(database.get(i)));
             System.out.println("this book was found within out database at index: " + i);
         }
-        else{
+        else {
             System.out.println("This book was not found within our database"); 
         }
     }

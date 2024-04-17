@@ -33,13 +33,13 @@ public class LibraryDatabase extends Book {
     }
     public void searchDatabase(Book name) {
         for (int i = 0; i < database.size(); i++) {
-            if (name.equals(database.get(i)));
+            if (name.equals(database.get(i)))
             System.out.println("this book was found within out database at index: " + i);
-        }
         else {
             System.out.println("This book was not found within our database"); 
         }
-    }
+            }
+        }
     public void addBook(Book name) {
         database.add(name);
     }
@@ -58,7 +58,6 @@ public class LibraryDatabase extends Book {
     public String getInfo() {
         return getBookInfo();
     }
-
-    }
+        }
 
 

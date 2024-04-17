@@ -10,6 +10,7 @@ public LibraryMangementSystem(int userID, String password, String userType) {
     this.userType = userType;
 }
 public void login() {
+    @SuppressWarnings("resource")
     Scanner loginScanner = new Scanner(System.in);
     System.out.println("What is your userID and password?");
     String userAndPass = loginScanner.next();
@@ -18,10 +19,13 @@ public void login() {
     }
 
 public void register() {
+    @SuppressWarnings("resource")
     Scanner registerScanner = new Scanner(System.in);
     System.out.println("To register for a new account please enter your name");
+    @SuppressWarnings("unused")
     String name = registerScanner.next();
     System.out.println("To continue registering please enter your preferred password");
+    @SuppressWarnings("unused")
     String password = registerScanner.next();
     int userID = (int)(Math.random()*1000001)+1;
     System.out.println("your new UserID is: " + userID + "You have successfully registered for an account");

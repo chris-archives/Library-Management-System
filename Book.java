@@ -8,24 +8,16 @@ public class Book {
     private int feedbackCounter;
     private String info;
     private boolean reservationStatus;
-    private ArrayList<String>bookBin;
 
-    public Book(String title, String author, String genre, int feedback, int feedbackCounter, String info, boolean reservationStatus, ArrayList<String>bookBin) {
-        this.title = title;
+    public Book(String title, String author, String genre, int feedback, int feedbackCounter, String info, boolean reservationStatus) {
         this.author = author;
         this.genre = genre;
         this.feedback = feedback;
         this.feedbackCounter = feedbackCounter;
         this.info = info;
         this.reservationStatus = reservationStatus;
-        this.bookBin = bookBin;
-    }
-    public void getBookBin() {
-        for (int i = 0; i < bookBin.size(); i++) {
-            System.out.println(bookBin.get(i));
-    }
 }
-    public void getReservationStatus() {
+    public void displayReservationStatus() {
     if (reservationStatus) {
         System.out.println("this book is aviable");
     }
@@ -58,5 +50,8 @@ public class Book {
     public String getBookInfo() {
         return info;
     }
+    public boolean getReservationStatus() {
+        return reservationStatus;
     }
+}
 
